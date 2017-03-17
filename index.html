@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>tic-tac-toe</title>
+    <link  href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="tic_tac_toe.js"></script>
+    <!-- <img src="sakura.png" alt="sakura background"> -->
+
+
+    <style>
+
+    .gameboard {
+      display: inline-block;
+
+    }
+
+    .box {
+      font-family: Baloo Bhaina;
+      color: #c92c5a;
+    }
+
+    .clicked {
+      pointer-events: none;
+    }
+
+    .gameover {
+      pointer-events: none;
+    }
+
+
+
+    body{
+
+      text-align: center;
+      font-family: Baloo Bhaina;
+      font-size: 35px;
+      margin-top: 10px;
+      background: url(sakura.png);
+
+    }
+
+
+
+    button {
+      /*border: 2px solid red;*/
+
+      height: 200px;
+      width: 200px;
+      background-image: url(sakura.png);
+      font-size: 100px;
+      border-radius: 25%;
+
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1 style="color: #c92c5a">Tic Tac Toe</h1>
+    <div class="status"></div>
+    <table class = "gameboard">
+      <tr>
+        <td><button id="1" class= "box"></button></td>
+
+        <td><button id="2" class= "box"></button></td>
+        <td><button id="3" class= "box"></button></td>
+
+      </tr>
+      <tr>
+        <td><button id="4" class= "box"></button></td>
+        <td><button id="5" class= "box"></button></td>
+        <td><button id="6" class= "box"></button></td>
+      </tr>
+      <tr>
+        <td><button id="7" class= "box"></button></td>
+        <td><button id="8" class= "box"></button></td>
+        <td><button id="9" class = "box"></button></td>
+      </tr>
+    </table>
+
+  </body>
+</html>
